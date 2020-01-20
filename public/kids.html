@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bape - Kids</title>
+    <link rel="stylesheet" href="assests/sass/kids.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+        <div class="logo">
+          <img class="icon" src ="img/icon.png" alt="">
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="mens.html">
+                    Mens
+                </a>
+                <a href="womens.html">
+                    Womens
+                </a>
+                <a href="kids.html">
+                    Kids
+                </a>
+                <a href="lookbook.html">
+                    Lookbook
+                </a>
+                <a id="card" href="checkout.html">
+                    Checkout = £0
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="content-area">
+        <div class="model">
+          <img src="img/bape-children.png" alt="">
+        </div>
+        <div class="info">
+          <div class="insider">
+            <h5>Kids</h5>
+            <h1>BAPE BABY MILO TRACKSUIT</h1>
+            <p>Shoreditch mumblecore paleo sustainable authentic cornhole swag. Tilde snackwave poutine craft beer gluten-free lomo. Sartorial adaptogen pour-over, raw denim intelligentsia farm-to-table ramps tattooed typewriter cliche hot chicken blog meh taiyaki. Shaman green juice poutine hot chicken deep v ramps humblebrag hammock next level. DIY shoreditch gochujang kombucha ethical. Lo-fi next level bushwick, 3 wolf moon leggings meditation flannel kinfolk glossier tumblr.</p>
+            <div class="size">
+                <div class="title">
+                    Sizes:
+              </div>
+                <ul class="sizes">
+                    <li class="circle"> &lt;0</li>
+                    <li class="circle">0-2</li>
+                    <li class="circle">3-5</li>
+                    <li class="semi-circle">6-9</li>
+                    <li class="semi-circle">10-16</li>
+                    <li class="semi-circle">CUSTOM</li>
+                </ul>
+            </div>
+            <div class="action-btns">
+                <a class="red-hollow-btn">
+                    <span id="price" data_value="350">
+                        £350
+                    </span>
+                    <button class="red-hollow-btn1" onclick="myFunction();">add to cart</button>
+                </a>
+                <a class="lightgrey-btn">
+                    find a store
+                </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="content-area1">
+      <div class="modelnew">
+        <img src="img/bape-kids.png" alt="">
+      </div>
+      <div class="info">
+        <div class="insider">
+          <h5>Kids</h5>
+          <h1>BAPE BABY MILO BACKPACK</h1>
+          <p>Kitsch offal +1 typewriter adaptogen brunch vinyl raclette brooklyn retro swag. Umami subway tile put a bird on it coloring book, forage kale chips kinfolk. Fixie you probably haven't heard of them activated charcoal gentrify vexillologist tousled, ramps raclette chambray. Glossier slow-carb tousled keytar fixie, meh irony vegan. Vegan occupy drinking vinegar pinterest. Gentrify distillery tumblr kitsch knausgaard pop-up austin ramps chicharrones yuccie tote bag.</p>
+          <div class="size">
+              <div class="title">
+                  Sizes:
+            </div>
+              <ul class="sizes">
+                <li class="semi-circle">ONE SIZE</li>
+              </ul>
+          </div>
+          <div class="action-btns">
+            <a class="red-hollow-btn">
+              <span id="price1" data_value1="180">
+                £180
+              </span>
+              <button class="red-hollow-btn2" onclick="myFunction();">add to cart</button>
+            </a>
+            <a class="lightgrey-btn">
+              find a store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content-area3">
+      <div class="model123">
+        <img src="img/bape6.png" alt="">
+      </div>
+      <div class="info">
+        <div class="insider">
+          <h5>Kids</h5>
+          <h1>BAPE BABY MILO TRUCKER HAT</h1>
+          <p>Narwhal hella taiyaki vexillologist waistcoat. Viral marfa bicycle rights next level, sriracha slow-carb hella ennui. Vaporware cloud bread portland lyft prism meggings master cleanse chillwave air plant neutra fashion axe salvia hot chicken. Cray prism chillwave fixie polaroid direct trade umami jean shorts asymmetrical kale chips taxidermy wolf locavore. Put a bird on it vaporware woke wayfarers. Typewriter lyft kinfolk mumblecore. Deep v meggings kickstarter af four loko.</p>
+          <div class="size">
+              <div class="title">
+                  Sizes:
+            </div>
+              <ul class="sizes">
+                <li class="circle">XS </li>
+                <li class="circle">S</li>
+                <li class="circle">M</li>
+                <li class="semi-circle">L</li>
+                <li class="semi-circle">XL</li>
+                <li class="semi-circle">CUSTOM</li>
+              </ul>
+          </div>
+          <div class="action-btns">
+            <a class="red-hollow-btn3">
+              <span id="price1" data_value1="180">
+                £180
+              </span>
+              <button class="red-hollow-btn4" onclick="myFunction();">add to cart</button>
+            </a>
+            <a class="lightgrey-btn">
+              find a store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript">
+    var price=$("#price").attr('data_value');
+    var prices=$("#price1").attr('data_value1');
+    var i = 0;
+    function myFunction()
+    {
+        i++;
+        var x = +price + +prices;
+       document.getElementById("card").innerHTML="CHECKOUT = £"+i*x;
+    }
+
+</script>
+</body>
+</html>

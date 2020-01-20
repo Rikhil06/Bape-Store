@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+
+nav#main {
+position: fixed;
+top: 45%;
+right: 20px;
+z-index: 9999;
+}
+
+/* I added #main to the selector of the active class */
+
+nav#main a:hover, nav#main li.active a { background: #ff0; }
+nav#main a { margin-bottom:10px; background: #000; display:block; height:15px; width:15px; overflow:hidden; }
+
+#top { width:100%; height:800px; background: #eee; }
+#middle { width:100%; height:800px; background: #ddd; }
+#bottom { width:100%; height:640px; background: #aaa; }
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.icon{
+  top: -72.5px;
+  position: relative;
+  max-width: 14%;
+  right: 20px;
+}
+
+#header {
+  padding: 40px 0;
+}
+#header .logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+#header .menu {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  right: 20px;
+}
+
+#header .menu a {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+#header .menu a:hover {
+  color: #E85F46;
+}
+#content-area .insider{
+  max-width: 490px;
+  /* flex-direction: row;
+  justify-content: space-between; */
+  position:relative;
+  top: -91px;
+}
+#content-area .model {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+#content-area .model img {
+  max-width: 500px;
+  display: block;
+  position: relative;
+  top: -142px;
+}
+#content-area .info {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+#content-area .info h5 {
+  display: inline-block;
+  background: #E85F46;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 8px;
+  font-weight: 700;
+  color: #fff;
+}
+#content-area .info h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+  margin: 10px 0;
+
+}
+#content-area .info p {
+  font-weight: 100;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+#content-area .info .size {
+  margin-bottom: 24px;
+}
+#content-area .info .size .title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+#content-area .info .size .sizes li {
+  font-size: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#content-area .info .size .sizes li.circle {
+  height: 30px;
+  width: 30px;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+#content-area .info .size .sizes li.semi-circle {
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#content-area .info .size .sizes li:hover {
+  background-color: #E85F46;
+}
+
+#content-area .info .size .sizes li.selected{
+  background: #E85F46;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+#content-area .info .action-btns .red-hollow-btn {
+  border: 2px solid #E85F46;
+  display: inline-block;
+  padding: 3px;
+  color: #E85F46;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+#content-area .info .action-btns .red-hollow-btn .price {
+  font-size: 13px;
+  margin-right: 8px;
+}
+#content-area .info .action-btns .lightgrey-btn {
+  background: #F5F5F7;
+  padding: 6.5px;
+  color: #1b1b1b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  top: -1px;
+  min-width: 108.062px;
+  border: none;
+  max-width: 110.062px;
+  outline: 0;
+  position: relative;
+}
+#menu .nav .current{
+  background-color: red;
+}
+
+#content-area .info .action-btns .red-hollow-btn1 {
+  padding: 8px;
+  color: #E85F46;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+#content-area .info .action-btns .red-hollow-btn1:focus{
+  outline: 0;
+}
+
+#price{
+  font-size: 13px;
+  margin-left: 8px;
+}
